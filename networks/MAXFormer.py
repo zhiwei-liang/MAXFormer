@@ -477,7 +477,7 @@ class MyLayer(nn.Module):
         res = []
         x = self.conv(x)
         w = self.window_size
-        global_x = Rearrange('b d (x w1) (y w2) -> b x y w1 w2 d', w1=w, w2=w)(x)
+        global_x = Rearrange('b d (w1 x) (w2 y) -> b x y w1 w2 d', w1=w, w2=w)(x)
         global_x = self.grid_attn(global_x)
         global_x = Rearrange('b x y w1 w2 d -> b d (w1 x) (w2 y)')(global_x)
         res.append(global_x)
