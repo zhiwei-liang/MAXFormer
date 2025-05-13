@@ -50,4 +50,14 @@ This project has benefited from the following resources, and I would like to exp
 
 ### Citation
 
-Coming soon!
+```
+@article{liang2023maxformer,
+  title={MAXFormer: Enhanced transformer for medical image segmentation with multi-attention and multi-scale features fusion},
+  author={Liang, Zhiwei and Zhao, Kui and Liang, Gang and Li, Siyu and Wu, Yifei and Zhou, Yiping},
+  journal={Knowledge-Based Systems},
+  volume={280},
+  pages={110987},
+  year={2023},
+  publisher={Elsevier}
+}
+```
